@@ -110,3 +110,25 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+body {
+  background-color: hsl(var(--clr-dark-3));
+  background-image: url('./images/bg-stars.svg'),
+    url('./images/pattern-hills.svg');
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: 100%;
+  color: hsl(var(--clr-white));
+}
+
+@media (min-width: 40em) {
+  body {
+    background-size: auto;
+  }
+}
+
+span {
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
